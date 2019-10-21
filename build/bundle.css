@@ -242,7 +242,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 34px; }
   .main-nav__link {
     width: 25%;
     max-width: 261px;
@@ -282,4 +283,157 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     color: inherit;
     line-height: 20px; }
+
+.promo-markets__list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none; }
+
+.promo-markets__item:not(:last-child) {
+  margin-bottom: 10px; }
+
+.card-market {
+  width: 100%;
+  max-width: 1056px;
+  padding: 20px 21px 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e6ecf2;
+  border-radius: 4px; }
+  .card-market__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 12px; }
+  .card-market__info {
+    padding-right: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+  .card-market__name {
+    margin-right: 31px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 25px; }
+  .card-market__description-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: disc;
+    font-size: 13px;
+    font-weight: 400;
+    color: #bbbcc4; }
+  .card-market__description-item:not(:last-child) {
+    margin-right: 5px; }
+  .card-market__included-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    color: #ffffff;
+    margin-bottom: 20px; }
+  .card-market__state, .card-market__included-item {
+    position: relative;
+    padding: 9px 10px 7px 25px;
+    font-size: 13px;
+    font-weight: 400;
+    color: inherit;
+    line-height: 20px;
+    border-radius: 4px; }
+    .card-market__state:before, .card-market__included-item:before {
+      content: '';
+      position: absolute;
+      top: 13px;
+      left: 10px;
+      width: 11px;
+      height: 5px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-bottom-style: solid;
+      border-left-style: solid;
+      -webkit-transform: rotate(-55deg);
+              transform: rotate(-55deg); }
+  .card-market__state {
+    background-color: #5a39a7;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .card-market__state:before {
+      border-bottom-color: #ffffff;
+      border-left-color: #ffffff; }
+  .card-market__included-list {
+    padding: 0;
+    margin: 0 0 0 10px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: #000000; }
+  .card-market__included-item {
+    border: 1px solid #e6ecf2;
+    color: #222222; }
+    .card-market__included-item:not(:last-child) {
+      margin-right: 10px; }
+    .card-market__included-item:before {
+      border-bottom-color: #000000;
+      border-left-color: #000000; }
+  .card-market__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .card-market__review-summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 25px; }
+  .card-market__review-raiting {
+    margin-right: 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffaa30;
+    line-height: 20px; }
+  .card-market__review-counted {
+    font-size: 13px;
+    font-weight: 400;
+    color: #222222; }
 

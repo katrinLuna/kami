@@ -1,0 +1,137 @@
+.card-market {
+    width: 100%;
+    max-width: 1056px;
+    padding: 20px 21px 20px 30px;
+    box-sizing: border-box;
+    border: 1px solid $light-grey;
+    border-radius: 4px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    &__info {
+        padding-right: 30px;        
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    &__name {
+        margin-right: 31px;
+        margin-top: 0;
+        margin-bottom: 0;
+        @include set-font (16px, $font-bold, $black);
+        line-height: 25px;
+    }
+
+    &__description-list {
+        padding: 0;
+        margin: 0;
+        list-style-type: disc;
+        @include set-font (13px, $font-normal, $grey);
+
+    }
+
+    &__description-item {
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+
+    &__included-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        color: $white;
+        margin-bottom: 20px;
+    }
+
+    &__state,
+    &__included-item {
+        position: relative;
+        padding: 9px 10px 7px 25px;
+        @include set-font (13px, $font-normal);
+        line-height: 20px;
+        border-radius: 4px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 13px;
+            left: 10px;
+            width: 11px;
+            height: 5px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            transform: rotate(-55deg);
+        }
+    }
+    
+    &__state {
+        background-color: $light-purple;
+        border: none;
+        box-sizing: border-box;
+        
+        &:before {
+            border-bottom-color: $white;
+            border-left-color: $white;
+        }
+    }
+
+    &__included-list {
+        padding: 0;
+        margin: 0 0 0 10px;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $black;
+    }
+
+    &__included-item {
+        border: 1px solid $light-grey;
+        color: $light-black;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &:before {
+            border-bottom-color: $black;
+            border-left-color: $black;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__review-summary {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 25px;
+    }
+
+    &__review-raiting {
+        margin-right: 14px;
+        @include set-font (13px, $font-bold, #ffaa30);
+        line-height: 20px;
+    }
+
+    &__review-counted {
+        @include set-font (13px, $font-normal, $light-black);
+    }
+
+    
+
+}

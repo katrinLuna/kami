@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" width="20" height="19">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-107 -258L1107 -258L1107 497L-107 497Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffaa30 } 
+	</style>
+	<g id="test" clip-path="url(#cp1)">
+		<g id="cards">
+			<g id="card-green">
+				<g id="card copy 6">
+					<g id="card">
+						<path id="star copy 2" class="shp0" d="M17.21 7.06L13.09 6.61C12.83 6.58 12.63 6.43 12.53 6.22L10.83 2.52C10.51 1.83 9.52 1.83 9.2 2.52L7.48 6.22C7.38 6.43 7.16 6.6 6.93 6.61L2.8 7.06C2.03 7.14 1.72 8.07 2.3 8.58L5.36 11.32C5.55 11.48 5.63 11.73 5.58 11.96L4.74 15.94C4.59 16.68 5.39 17.26 6.07 16.88L9.67 14.87C9.89 14.75 10.14 14.75 10.36 14.87L13.96 16.88C14.63 17.26 15.44 16.68 15.29 15.94L14.45 11.96C14.38 11.73 14.47 11.48 14.65 11.32L17.71 8.58C18.27 8.08 17.97 7.14 17.21 7.06Z" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
