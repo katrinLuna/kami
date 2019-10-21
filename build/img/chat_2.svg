@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43" width="43" height="43">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-547 -61L667 -61L667 694L-547 694Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #58329e } 
+	</style>
+	<g id="test" clip-path="url(#cp1)">
+		<g id="Dashboard">
+			<g id="unanswered">
+				<path id="-e-Shape" fill-rule="evenodd" class="shp0" d="M42 6L42 30C42 32.2 40.2 34 38 34L10 34L2 42L2.02 6C2.02 3.8 3.8 2 6 2L38 2C40.2 2 42 3.8 42 6ZM24 22L20 22L20 26L24 26L24 22ZM24 10L20 10L20 18L24 18L24 10Z" />
+			</g>
+		</g>
+	</g>
+</svg>

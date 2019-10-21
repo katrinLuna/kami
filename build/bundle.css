@@ -193,13 +193,13 @@ summary {
 
 body {
   min-width: 320px;
-  max-width: 1056px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
+  padding: 14px;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: normal; }
+  letter-spacing: normal;
+  background-color: #e6ecf2; }
 
 img {
   max-width: 100%;
@@ -226,6 +226,15 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.content-wrapper {
+  background-color: #ffffff;
+  min-width: 320px;
+  max-width: 1185px;
+  margin: 0 auto;
+  padding: 28px 64px 37px 64px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .main-nav {
   width: 100%;
   display: -webkit-box;
@@ -233,8 +242,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 43px; }
+          justify-content: space-between; }
   .main-nav__link {
     width: 25%;
     max-width: 261px;
@@ -245,7 +253,24 @@ input[type="radio"].visually-hidden {
     border-radius: 4px;
     background-color: #4a0594;
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    background-repeat: no-repeat; }
+    .main-nav__link--review {
+      background-image: url("img/chat.svg");
+      background-position: 206px 20px;
+      background-size: 41px 41px; }
+    .main-nav__link--non-answer-review {
+      background-image: url("img/chat_2.svg");
+      background-position: 205px 20px;
+      background-size: 41px 41px; }
+    .main-nav__link--refresh {
+      background-image: url("img/arrow.svg");
+      background-position: 204px 17px;
+      background-size: 39px 39px; }
+    .main-nav__link--rating {
+      background-image: url("img/star.svg");
+      background-position: 202px 18px;
+      background-size: 38px 38px; }
   .main-nav__text-number {
     display: block;
     font-size: 25px;

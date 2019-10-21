@@ -2,7 +2,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 43px;
 
     &__link {
         width: 25%;
@@ -14,6 +13,31 @@
         background-color: $purple;
         color: $white;
         text-decoration: none;
+        background-repeat: no-repeat;
+
+        &--review {
+            background-image: url('img/chat.svg');
+            background-position: 206px 20px;
+            background-size: 41px 41px;
+        }
+
+        &--non-answer-review {
+            background-image: url('img/chat_2.svg');
+            background-position: 205px 20px;
+            background-size: 41px 41px;
+        }
+
+        &--refresh {
+            background-image: url('img/arrow.svg');
+            background-position: 204px 17px;
+            background-size: 39px 39px;
+        }
+
+        &--rating {
+            background-image: url('img/star.svg');
+            background-position: 202px 18px;
+            background-size: 38px 38px;
+        }
     }
 
     &__text-number {

@@ -13,25 +13,81 @@
 </head>
 <body>
     <h1 class="visually-hidden">Дашборд</h1>
+    <div class="content-wrapper">
+      <nav class="main-nav">
+        <a href="#" class="main-nav__link main-nav__link--review">
+          <span class="main-nav__text-number">165</span> 
+          <span class="main-nav__text">отзывов</span>
+        </a>
+        <a href="#" class="main-nav__link main-nav__link--non-answer-review">
+          <span class="main-nav__text-number">21</span> 
+          <span class="main-nav__text">неотвеченный отзыв</span>
+        </a>
+        <a href="#" class="main-nav__link main-nav__link--refresh">
+          <span class="main-nav__text-number">50</span> 
+          <span class="main-nav__text">обновлений</span>
+        </a>
+        <a href="#" class="main-nav__link main-nav__link--rating">
+          <span class="main-nav__text-number">4,5</span> 
+          <span class="main-nav__text">средний рейтинг</span>
+        </a>
+      </nav>
 
-    <nav class="main-nav">
-      <a href="#" class="main-nav__link main-nav__link--review">
-        <span class="main-nav__text-number">165</span> 
-        <span class="main-nav__text">отзывов</span>
-      </a>
-      <a href="#" class="main-nav__link main-nav__link--non-answer-review">
-        <span class="main-nav__text-number">21</span> 
-        <span class="main-nav__text">неотвеченный отзыв</span>
-      </a>
-      <a href="#" class="main-nav__link main-nav__link--refresh">
-        <span class="main-nav__text-number">50</span> 
-        <span class="main-nav__text">обновлений</span>
-      </a>
-      <a href="#" class="main-nav__link main-nav__link--reiting">
-        <span class="main-nav__text-number">4,5</span> 
-        <span class="main-nav__text">средний рейтинг</span>
-      </a>
-    </nav>
+      <section class="promo-market">
+        <ul class="promo-market__list">
+          <li class="promo-market__item card-market">
+            <div class="card-market__header">
+                <div class="card-market__info">
+                  <p class="card-market__name">
+                    Google
+                  </p>
+                  <ul class="card-market__description-list">
+                    <li class="card-market__description-item">
+                      все 30 заведений настроены
+                    </li>
+                  </ul>
+                </div>
+              <button type="button" class="card-market__settings">
+                <span class="visually-hidden">Настройки маркетинговой площадки</span>
+              </button>
+            </div>
+
+            <div class="card-market__included-wrapper">
+              <button class="card-market__state">
+                Синхронизированно
+              </button>            
+              <ul class="card-market__included-list">
+                <li class="card-market__included-item">Инфа</li>
+                <li class="card-market__included-item">Прайс</li>
+                <li class="card-market__included-item">Фото</li>
+                <li class="card-market__included-item">Акции</li>
+              </ul>
+            </div>
+
+            <div class="card-market__footer">
+              <div class="card-market__review-summary">
+                <div class="card-market__review-raiting">
+                  <span>
+                    4,5
+                  </span> 
+                  из 5
+                </div>
+                <div class="card-market__review-counted">
+                  <span>198</span>  отзывов,
+                  <span>15</span>  неотвеченных
+                </div>
+              </div>
+
+              <div class="card-market__refresh-info">
+                <span>2</span> обновления
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+
+      </section>
+    </div>
 
 
 </body>
