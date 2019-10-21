@@ -1,5 +1,6 @@
 body {
     min-width: 320px;
+    max-width: 1056px;
     margin: 0 auto;
     padding: 0;
     font-family: $font;
@@ -37,20 +38,20 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
-.btn {
-    text-align: center;
-    white-space: nowrap;
-    border-radius: 24px;
-    border: none;
+// .btn {
+//     text-align: center;
+//     white-space: nowrap;
+//     border-radius: 24px;
+//     border: none;
 
-    &:hover,
-    &:focus {
-        background-color: #1b82e0;
-    }
+//     &:hover,
+//     &:focus {
+//         background-color: #1b82e0;
+//     }
 
-    &:active {
-        background-color: #fff;
+//     &:active {
+//         background-color: #fff;
 
-    }
-}
+//     }
+// }
   

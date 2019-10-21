@@ -1,0 +1,30 @@
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 43px;
+
+    &__link {
+        width: 25%;
+        max-width: 261px;
+        height: 85px;
+        padding: 14px 60px 17px 27px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background-color: $purple;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__text-number {
+        display: block;
+        @include set-font (25px, $font-bold);
+        line-height: 35px;
+    }
+
+    &__text {
+        @include set-font (12px, $font-normal);
+        line-height: 20px;
+    }
+
+}
