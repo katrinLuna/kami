@@ -34,7 +34,6 @@
         margin: 0;
         list-style-type: disc;
         @include set-font (13px, $font-normal, $grey);
-
     }
 
     &__description-item {
@@ -70,6 +69,38 @@
 
         &::after {
             top: 7px;
+        }
+    }
+
+    &__toogle-active-btn {
+        // display: none;
+        position: absolute;
+        z-index: 10;
+        top: 24px;
+        right: -32px;
+        width: 117px;
+        height: 66px;
+        border-radius: 4px;
+        background-color: $white;
+        border: 1px solid #e8e8e8;
+        line-height: 66px;
+        @include set-font (16px, $font-normal, $light-purple);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            right: 28px;
+            width: 10px;
+            height: 10px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-bottom-color: #e8e8e8;
+            border-left-color: #e8e8e8;
+            background-color: $white;
+            transform: rotate(135deg);
         }
     }
 
@@ -185,18 +216,45 @@
     @media (max-width: $tablet-width) {
         &__header,
         &__settings,
-        &__included-wrapper,
-        &__footer {
+        &__included-wrapper {
             flex-wrap: wrap;
         }
 
-        &__info {
+        &__info,
+        &__footer,
+        &__review-summary {
             display: block;
             padding-right: 5px;
         }
         
         &__description-list {
             padding-left: 16px;
+        }
+
+        &__included-list {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        &__review-summary { 
+            margin-bottom: 10px;
+        }
+
+        &__review-raiting {
+            font-size: 14px;
+        }
+
+        &__included-item {
+            margin-bottom: 10px;
+        }
+
+        &__review-counted {
+            padding-left: 16px;
+            font-size: 14px;
+        }
+
+        &__refresh-info {
+            font-size: 14px;
         }
     }
 
