@@ -5,6 +5,7 @@
     box-sizing: border-box;
     border: 1px solid $light-grey;
     border-radius: 4px;
+    background-image: linear-gradient(90deg, $middle-purple 4px, $white 4px);
 
     &__header {
         display: flex;
@@ -42,6 +43,36 @@
         }
     }
 
+    &__settings {
+        position: relative;
+        width: 4px;
+        height: 4px;
+        margin-top: 13px;
+        border-radius: 2px;
+        background-color: #cfd5db;
+        display: flex;
+        flex-direction: column;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 4px;
+            height: 4px;
+            border-radius: 2px;
+            background-color: #cfd5db;
+        }
+
+        &::before {
+            top: -6px;
+        }
+
+        &::after {
+            top: 7px;
+        }
+    }
+
     &__included-wrapper {
         display: flex;
         justify-content: flex-start;
@@ -74,7 +105,7 @@
     }
     
     &__state {
-        background-color: $light-purple;
+        background-color: $middle-purple;
         border: none;
         box-sizing: border-box;
         
@@ -119,19 +150,54 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding-left: 25px;
+
     }
 
     &__review-raiting {
-        margin-right: 14px;
-        @include set-font (13px, $font-bold, #ffaa30);
+        margin-right: 34px;
+        padding-left: 21px;
+        @include set-font (13px, $font-bold, $gold);
         line-height: 20px;
+        background-image: url('img/star_review.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 16px 17px;
     }
 
     &__review-counted {
+        display: flex;
+        margin: 0;
+        padding: 0;
         @include set-font (13px, $font-normal, $light-black);
+        line-height: 20px;
+        list-style-type: disc;
+
+        & > li:not(:last-child) {
+            margin-right: 34px;
+        }
     }
 
-    
+    &__refresh-info {
+        @include set-font (13px, $font-normal, $light-purple);
+        line-height: 20px;
+    }
+
+    @media (max-width: $tablet-width) {
+        &__header,
+        &__settings,
+        &__included-wrapper,
+        &__footer {
+            flex-wrap: wrap;
+        }
+
+        &__info {
+            display: block;
+            padding-right: 5px;
+        }
+        
+        &__description-list {
+            padding-left: 16px;
+        }
+    }
 
 }

@@ -47,6 +47,14 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
 }
 
+@media (max-width: $tablet-width) {
+    
+    .content-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 // .btn {
 //     text-align: center;
 //     white-space: nowrap;

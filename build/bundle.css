@@ -235,6 +235,11 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+@media (max-width: 767px) {
+  .content-wrapper {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
 .main-nav {
   width: 100%;
   display: -webkit-box;
@@ -246,7 +251,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 34px; }
   .main-nav__link {
     width: 25%;
-    max-width: 261px;
     height: 85px;
     padding: 14px 60px 17px 27px;
     -webkit-box-sizing: border-box;
@@ -283,6 +287,32 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     color: inherit;
     line-height: 20px; }
+  @media (min-width: 1150px) {
+    .main-nav__link {
+      max-width: 261px; } }
+  @media (max-width: 1150px) {
+    .main-nav {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .main-nav__link {
+        width: 49%;
+        margin-bottom: 20px; } }
+  @media (max-width: 767px) {
+    .main-nav__link {
+      width: 100%;
+      min-width: 278px;
+      margin-bottom: 10px;
+      height: 34px;
+      padding: 7px 30px 7px 7px;
+      background-position: 90% 0;
+      background-size: contain; }
+    .main-nav__text-number {
+      font-size: 14px;
+      line-height: 16px;
+      display: inline-block; }
+    .main-nav__text {
+      font-size: 12px;
+      line-height: 14px; } }
 
 .promo-markets__list {
   padding: 0;
@@ -300,7 +330,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #e6ecf2;
-  border-radius: 4px; }
+  border-radius: 4px;
+  background-image: linear-gradient(90deg, #5a39a7 4px, #ffffff 4px); }
   .card-market__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -340,6 +371,32 @@ input[type="radio"].visually-hidden {
     color: #bbbcc4; }
   .card-market__description-item:not(:last-child) {
     margin-right: 5px; }
+  .card-market__settings {
+    position: relative;
+    width: 4px;
+    height: 4px;
+    margin-top: 13px;
+    border-radius: 2px;
+    background-color: #cfd5db;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .card-market__settings::before, .card-market__settings::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #cfd5db; }
+    .card-market__settings::before {
+      top: -6px; }
+    .card-market__settings::after {
+      top: 7px; }
   .card-market__included-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -424,16 +481,43 @@ input[type="radio"].visually-hidden {
             justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    padding-left: 25px; }
+            align-items: center; }
   .card-market__review-raiting {
-    margin-right: 14px;
+    margin-right: 34px;
+    padding-left: 21px;
     font-size: 13px;
     font-weight: 700;
     color: #ffaa30;
-    line-height: 20px; }
+    line-height: 20px;
+    background-image: url("img/star_review.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 16px 17px; }
   .card-market__review-counted {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
     font-size: 13px;
     font-weight: 400;
-    color: #222222; }
+    color: #222222;
+    line-height: 20px;
+    list-style-type: disc; }
+    .card-market__review-counted > li:not(:last-child) {
+      margin-right: 34px; }
+  .card-market__refresh-info {
+    font-size: 13px;
+    font-weight: 400;
+    color: #694caf;
+    line-height: 20px; }
+  @media (max-width: 767px) {
+    .card-market__header, .card-market__settings, .card-market__included-wrapper, .card-market__footer {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .card-market__info {
+      display: block;
+      padding-right: 5px; }
+    .card-market__description-list {
+      padding-left: 16px; } }
 
