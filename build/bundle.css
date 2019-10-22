@@ -276,6 +276,10 @@ input[type="radio"].visually-hidden {
       background-image: url("img/star.svg");
       background-position: 202px 18px;
       background-size: 38px 38px; }
+    .main-nav__link:hover, .main-nav__link:focus {
+      background-color: #694caf; }
+    .main-nav__link:active {
+      background-color: #5a39a7; }
   .main-nav__text-number {
     display: block;
     font-size: 25px;
@@ -369,9 +373,20 @@ input[type="radio"].visually-hidden {
     list-style-type: disc;
     font-size: 13px;
     font-weight: 400;
-    color: #bbbcc4; }
+    color: #bbbcc4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .card-market__description-item:not(:last-child) {
-    margin-right: 5px; }
+    margin-right: 30px; }
   .card-market__settings {
     position: relative;
     width: 4px;
@@ -461,6 +476,22 @@ input[type="radio"].visually-hidden {
       border-left-style: solid;
       -webkit-transform: rotate(-55deg);
               transform: rotate(-55deg); }
+
+@-webkit-keyframes move-gradient {
+  0% {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(3%, #5a39a7), color-stop(3%, #ffffff));
+    background-image: linear-gradient(90deg, #5a39a7 3%, #ffffff 3%); }
+  100% {
+    background-image: -webkit-gradient(linear, left top, right top, from(#5a39a7), to(#ffffff));
+    background-image: linear-gradient(90deg, #5a39a7, #ffffff); } }
+
+@keyframes move-gradient {
+  0% {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(3%, #5a39a7), color-stop(3%, #ffffff));
+    background-image: linear-gradient(90deg, #5a39a7 3%, #ffffff 3%); }
+  100% {
+    background-image: -webkit-gradient(linear, left top, right top, from(#5a39a7), to(#ffffff));
+    background-image: linear-gradient(90deg, #5a39a7, #ffffff); } }
   .card-market__state {
     background-color: #5a39a7;
     border: none;
@@ -469,6 +500,23 @@ input[type="radio"].visually-hidden {
     .card-market__state:before {
       border-bottom-color: #ffffff;
       border-left-color: #ffffff; }
+    .card-market__state--creating {
+      border: 1px solid #e6ecf2;
+      color: #222222;
+      background-color: #ffffff;
+      -webkit-animation: move-gradient 1s infinite linear;
+              animation: move-gradient 1s infinite linear; }
+      .card-market__state--creating:before {
+        width: 20px;
+        height: 24px;
+        top: 6px;
+        left: 5px;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        background-image: url("img/curcle-arrow.svg");
+        background-position: 3px center;
+        background-size: 12px 17px;
+        background-repeat: no-repeat; }
   .card-market__included-list {
     padding: 0;
     margin: 0 0 0 10px;
@@ -524,6 +572,11 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 16px 17px; }
+    .card-market__review-raiting--no-rate {
+      font-size: 13px;
+      font-weight: 400;
+      color: #bbbcc4;
+      background-image: url("img/grey-star.svg"); }
   .card-market__review-counted {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -542,6 +595,18 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     color: #694caf;
     line-height: 20px; }
+    .card-market__refresh-info--action-need {
+      width: 118px;
+      height: 28px;
+      padding: 2px 5px 2px 26px;
+      border-radius: 4px;
+      background-color: #ffaa30;
+      color: #ffffff;
+      line-height: 28px;
+      background-image: url("img/bell.svg");
+      background-repeat: no-repeat;
+      background-position: 9px center;
+      background-size: 14px 16px; }
   @media (max-width: 767px) {
     .card-market__header, .card-market__settings, .card-market__included-wrapper {
       -ms-flex-wrap: wrap;
@@ -549,6 +614,8 @@ input[type="radio"].visually-hidden {
     .card-market__info, .card-market__footer, .card-market__review-summary {
       display: block;
       padding-right: 5px; }
+    .card-market__info {
+      width: 90%; }
     .card-market__description-list {
       padding-left: 16px; }
     .card-market__included-list {

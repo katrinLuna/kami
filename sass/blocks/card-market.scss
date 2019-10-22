@@ -34,11 +34,15 @@
         margin: 0;
         list-style-type: disc;
         @include set-font (13px, $font-normal, $grey);
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     &__description-item {
         &:not(:last-child) {
-            margin-right: 5px;
+            margin-right: 30px;
         }
     }
 
@@ -134,6 +138,16 @@
             transform: rotate(-55deg);
         }
     }
+
+    @keyframes move-gradient {
+        0% { 
+            background-image: linear-gradient(90deg, $middle-purple 3%, $white 3%);  
+        }
+        100% { 
+            background-image: linear-gradient(90deg, $middle-purple, $white);
+        }
+    }  
+        
     
     &__state {
         background-color: $middle-purple;
@@ -143,6 +157,26 @@
         &:before {
             border-bottom-color: $white;
             border-left-color: $white;
+        }
+
+        &--creating {
+            border: 1px solid $light-grey;
+            color: $light-black;
+            background-color: $white;
+            animation: move-gradient 1s infinite linear;
+            
+            &:before {
+                width: 20px;
+                height: 24px;
+                top: 6px;
+                left: 5px;
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+                background-image: url('img/curcle-arrow.svg');
+                background-position: 3px center;
+                background-size: 12px 17px;
+                background-repeat: no-repeat;
+            }
         }
     }
 
@@ -193,6 +227,11 @@
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: 16px 17px;
+
+        &--no-rate {
+            @include set-font (13px, $font-normal, $grey);
+            background-image: url('img/grey-star.svg');
+        }
     }
 
     &__review-counted {
@@ -211,7 +250,23 @@
     &__refresh-info {
         @include set-font (13px, $font-normal, $light-purple);
         line-height: 20px;
+
+        &--action-need {
+            width: 118px;
+            height: 28px;
+            padding: 2px 5px 2px 26px;
+            border-radius: 4px;
+            background-color: $gold;
+            color: $white;
+            line-height: 28px;
+            background-image: url('img/bell.svg');
+            background-repeat: no-repeat;
+            background-position: 9px center;
+            background-size: 14px 16px;
+        }
     }
+
+    
 
     @media (max-width: $tablet-width) {
         &__header,
@@ -225,6 +280,10 @@
         &__review-summary {
             display: block;
             padding-right: 5px;
+        }
+
+        &__info {
+            width: 90%;
         }
         
         &__description-list {

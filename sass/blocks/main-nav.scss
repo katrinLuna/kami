@@ -38,6 +38,15 @@
             background-position: 202px 18px;
             background-size: 38px 38px;
         }
+
+        &:hover,
+        &:focus {
+            background-color: $light-purple;
+        }
+
+        &:active {
+            background-color: $middle-purple;
+        }
     }
 
     &__text-number {
